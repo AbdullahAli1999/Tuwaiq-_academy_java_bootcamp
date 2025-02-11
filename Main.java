@@ -1,111 +1,107 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
 
-import java.util.Scanner;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         Scanner input = new Scanner(System.in);
+//        System.out.print("Please enter your name : ");
+//        String name = input.nextLine();
+//        System.out.print("Please enter your age: ");
+//        int age = input.nextInt();
+//        input.nextLine();
+//        System.out.print("Enter your role : ");
+//        String role = input.nextLine();
+//
+//        if(role.equalsIgnoreCase("admin") && (age > 18)){
+//            System.out.println("Welcome admin " + name + " Welcome to my bootcamp");
+//        }else if(role.equalsIgnoreCase("customer") && (age > 18)) {
+//            System.out.println("Welcome"+ name + "Welcome to my bootcamp ");
+//        }else if(role.equalsIgnoreCase("admin") && (age < 18)){
+//            System.out.println("Welcome  " + name + "hi");
+//        } else if (role.equalsIgnoreCase("customer") && (age < 18)) {
+//            System.out.println("Welcome  " + name + "hi");
+//        } else{
+//            System.out.println("Welcome");
+//        }
+/// //////////////////////////////////////////////////
+//        System.out.println("We will test your PASSWORD!!");
+//        System.out.println("Enter your password : ");
+//        String passw = input.nextLine();
+//
+//        if(passw.length() >10 ){
+//            System.out.println("Strong");
+//        }else if(passw.length() <8 && passw.length()>10 ){
+//            System.out.println("good");
+//        }else if(passw.length()<8){
+//            System.out.println("weak");
+//        }
 
-       // 1. Develop a program that takes the weight (in kilograms) and height (in meters as input and calculates the BMI, then prints it.
+ ////////////////////////////////////////////////////
 
-       // A.1
-//       System.out.print("Please enter your weight (in kilograms) = ");
-//       int weight = input.nextInt();
-//       System.out.print("Please enter yout height (in meters) = ");
-//       double height = input.nextDouble();
-//       System.out.print("your IBM = " + (weight /  Math.pow(height,2)));
-
-       /// ///////////////////////////////////////////////////////////////
-
-        // Write a program that takes the obtained marks and total marks as input and
-        //calculates the percentage, then prints it.
-
-        // A.2
-//        System.out.print("Obtained Marks = ");
-//        int marks = input.nextInt();
-//        System.out.print("Total Marks = ");
-//        int totalMarks = input.nextInt();
-//        System.out.println("Expected Output: Percentage = " + (marks * totalMarks / totalMarks)+"%");
-
-        /// /////////////////////////////////////////////////////////////
-
-        //3. Create a program that takes an amount in one currency and an exchange rate
-        //as input, then converts and prints the amount in another currency.
-
-        // A.3
-//        System.out.print("Amount in USD = ");
-//        double usd = input.nextDouble();
-//        System.out.print("Exchange Rate (USD to EUR) = ");
-//        double exchangeRate = input.nextDouble();
-//        System.out.println("Amount in EUR = " + (usd * exchangeRate));
-
-        /// /////////////////////////////////////////////////////////////
-
-        //4. Create a program that takes a string as input, calculates its length, and then
-        //reverses the string using the StringBuilder class, finally printing both the length and
-        //reversed string.
-
-        // A.4
-//        StringBuilder str = new StringBuilder("Hello world!");
-//        System.out.println("Length of the string: " + str.length() + " And Reversed string: " + str.reverse());
-
+//        System.out.println("Enter your grade : ");
+//        int grade = input.nextInt();
+//
+//        if(grade >= 90 && grade <=100){
+//            System.out.println("A");
+//        } else if (grade >=80 && grade <90) {
+//            System.out.println("B");
+//        } else if (grade >= 70 && grade <80) {
+//            System.out.println("C");
+//        } else if (grade >= 60 && grade <70) {
+//            System.out.println("D");
+//        }else if(grade < 60) {
+//            System.out.println("F");
+//        }
+//
         /// ////////////////////////////////////////////////////
-
-        //5. Develop a program that takes a sentence as input and extracts a substring from
-        //it, then prints the extracted substring.
-
-        // A.5 //****
-//        System.out.print("Sentence = ");
-//        String sentence1 = input.nextLine();
-//        System.out.print("Start Index = ");
-//        int startIn = input.nextInt();
-//        System.out.print("End Index = ");
-//        int endIn = input.nextInt();
-//        System.out.println("Expected Output: " + sentence1.substring(startIn,endIn) );
-
-        /// ////////////////////////////////////////////////////////////
-
-        //6. Write a program that takes a sentence and a keyword as input, then check if
-        //the keyword is present in the sentence and prints the result.
-
-        //A.6 //****
-//        System.out.print("Sentence = ");
-//        String sentence2 = input.nextLine();
-//        System.out.print("Keyword = ");
-//        String keyword = input.nextLine();
-//        System.out.println("Expected Output: Keyword " + sentence2.contains(keyword) + "");
-
-        /// ///////////////////////////////////////////////////
-
-        //7. Develop a program that takes a sentence and a word to replace as input, then
-        //replace all occurrences of the word with another word and prints the modified
-        //sentence.
-
-        //A.7
-//        System.out.print("Sentence = ");
-//        String sentence3 = input.nextLine();
-//        System.out.print("Word to Replace = ");
-//        String replace = input.nextLine();
-//        System.out.print("Replacement Word = ");
-//        String replacement = input.nextLine();
-//        System.out.println("Expected Output: " + sentence3.replace(replace,replacement));
-
-        /// //////////////////////////////////////////////////////
-
-        //8. Write a program that takes two strings as input and check if they are equal,
-        //ignoring the case, then prints whether they are equal or not.
-
-        //A.8
-//        System.out.print("String 1 = ");
-//        String str1 = input.nextLine();
-//        System.out.print("String 2 = ");
-//        String str2 = input.nextLine();
-//        System.out.println("Expected Output: " + str1.equalsIgnoreCase(str2));
-//        System.out.println("Strings are equal (ignoring case). ");
-
-
-
+        //SWITCH
+//        System.out.println("Enter your grade : ");
+//        String grade1 = input.nextLine();
+//        switch (grade1.toUpperCase()){
+//            case ("A"):
+//                System.out.println("Exllante");
+//                break;
+//            case ("B"):
+//                System.out.println("Very good");
+//                break;
+//            case ("C"):
+//                System.out.println("Good");
+//                break;
+//            case ("D"):
+//                System.out.println("Pass");
+//                break;
+//            case ("F"):
+//                System.out.println("Faild");
+//                break;
+//            default:
+//                System.out.println("Enter correct letters");
+//        }
+/// //////////////////////////////////////////////////////////
+//        System.out.println("Enter number 1 to enqiuer your username ");
+//        System.out.println("Enter number 2 to enqiuer your password ");
+//        System.out.println("Enter number 3 to enqiuer your balance ");
+//        System.out.println("Enter number 4 to enqiuer your calling cosutmer serves ");
+//        System.out.print("Choose the serves you want : ");
+//        int num = input.nextInt();
+//
+//        switch (num){
+//            case 1:
+//                System.out.println("Abdullah");
+//                break;
+//            case 2:
+//                System.out.println("123");
+//                break;
+//            case 3:
+//                System.out.println("4324");
+//                break;
+//            case 4:
+//                System.out.println("please call this number 0542");
+//                break;
+//        }
 
     }
 }
